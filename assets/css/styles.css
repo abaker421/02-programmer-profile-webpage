@@ -18,11 +18,49 @@ h2{
 }
 
 
-/* article {
+section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
     width: 100%;
-} */
+}
+
+#article-1 {
+ background-image: url("../images/project1.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100px;
+}
+
+#article-2 {
+    background-image: url("../images/project2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+   }
+
+   #article-3 {
+    background-image: url("../images/project3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+   }
+
+   #article-4 {
+    background-image: url("../images/project4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+   }
+
+   #article-5 {
+    background-image: url("../images/project5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+   }
 
 .nav-links {
      display: flex;
