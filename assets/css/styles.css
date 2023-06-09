@@ -1,0 +1,54 @@
+/* Targets H1, changes size, font family and color */
+h1 {
+    font-size: 48px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+h2{
+    border-right: 2px solid blue;
+    padding: 10px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Targets the header, creates flex box, puts items in a row */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: royalblue;
+}
+
+header img {
+ display: flex;
+ align-items: center;
+ height: 100px;
+ margin: 10px;
+ width: 100px;
+}
+
+/* Changes the margin of the nav so that the ul elements can go to the right of the page */
+nav {
+    margin-left: auto;
+}
+/* Targets the unordered list in the nav, creates and sets flex box properties, removes bullet points, puts content to right side of screen */
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
