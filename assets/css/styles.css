@@ -28,20 +28,20 @@ h2{
      display: flex;
      justify-content: space-between;
      width: 100%;
-     
 }
 /* Targets the header, creates flex box, puts items in a row */
 header {
     display: flex;
     flex-direction: row;
     background-color: royalblue;
+    align-items: center;
 }
 
 header img {
- display: flex;
- align-items: center;
+ /* display: flex;
+ align-items: center; */
  height: 100px;
- margin: 10px;
+ margin: 20px;
  width: 100px;
 }
 
@@ -68,5 +68,5 @@ nav ul li {
 
 .nav-links {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
