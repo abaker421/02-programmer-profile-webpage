@@ -27,11 +27,16 @@ section {
     width: 100%;
 }
 
+article {
+    width: 50%;
+}
+
 #article-1 {
  background-image: url("../images/project1.jpg");
  background-size: cover;
  background-repeat: no-repeat;
  height: 100px;
+ width: 100%;
 }
 
 #article-2 {
@@ -41,25 +46,38 @@ section {
     height: 100px;
    }
 
-   #article-3 {
+#article-3 {
     background-image: url("../images/project3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
    }
 
-   #article-4 {
+#article-4 {
     background-image: url("../images/project4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
    }
 
-   #article-5 {
+#article-5 {
     background-image: url("../images/project5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100px;
+   }
+
+   .banner {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 100%;
+   }
+
+.my-work {
+    display: flex;
+    flex-flow: row wrap;
    }
 
 .nav-links {
