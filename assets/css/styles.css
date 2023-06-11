@@ -1,4 +1,8 @@
-/* Targets H1, changes size, font family and color */
+
+* {
+ font-family
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -48,7 +52,7 @@ section {
 }
 
 article {
-    width: 500%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -128,7 +132,6 @@ div p {
     align-items: flex-end;
    }
 
-
 #my-work {
     display: flex;
     justify-content: flex-end;
@@ -136,12 +139,9 @@ div p {
     flex-wrap: wrap;
    }
 
-   /* article {
-margin-left: 8%;
-   } */
-
 .nav-links {
     display: flex;
     /* justify-content: space-between; */
     flex-flow: column wrap;
 }
+
