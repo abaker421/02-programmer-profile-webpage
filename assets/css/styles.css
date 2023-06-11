@@ -4,87 +4,11 @@ main {
     flex-direction: column;
 }
 
-h1 {
-    font-size: 56px;
-    font-family:'Courier New', Courier, monospace;
-    color: white;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-h2{
-    border-right: 2px solid blue;
-    padding: 10px;
-    text-align: right;
-    margin-right: 20px;
-}
-
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-article {
-    width: 50%;
-}
-
-#article-1 {
- background-image: url("../images/project1.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- height: 100px;
- width: 100%;
-}
-
-#article-2 {
-    background-image: url("../images/project2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-   }
-
-#article-3 {
-    background-image: url("../images/project3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-   }
-
-#article-4 {
-    background-image: url("../images/project4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-   }
-
-#article-5 {
-    background-image: url("../images/project5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-   }
-
-   .banner {
-    background-image: url("../images/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: 100%;
-   }
-
-.my-work {
-    display: flex;
-    flex-flow: row wrap;
-   }
-
-.nav-links {
-     display: flex;
-     justify-content: space-between;
-     width: 100%;
-}
 /* Targets the header, creates flex box, puts items in a row */
 header {
     display: flex;
@@ -94,17 +18,48 @@ header {
 }
 
 header img {
- /* display: flex;
- align-items: center; */
- height: 100px;
- margin: 20px;
- width: 100px;
+    height: 100px;
+    margin: 20px;
+    width: 100px;
+   }
+
+h1 {
+    font-size: 56px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+h2{
+    border-bottom: 2px solid blue;
+    padding: 10px;
+    text-align: right;
+    margin-right: auto;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    width: 500%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Changes the margin of the nav so that the ul elements can go to the right of the page */
 nav {
     margin-left: auto;
 }
+
 /* Targets the unordered list in the nav, creates and sets flex box properties, removes bullet points, puts content to right side of screen */
 nav ul{
     list-style: none;
@@ -127,7 +82,66 @@ nav a {
     color: inherit;
 }
 
-.nav-links {
+div p {
+ margin: 25px;
+ color:blue;
+ background-color: white;
+
+}
+   
+#contact-info {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+   }
+   
+#contact-info p {
+       margin: 120px;
+       text-align: center;
+       justify-content: center;
+   }
+   
+#my-work article {
     display: flex;
     flex-flow: row wrap;
+    width: 50%;
+   }
+
+#my-work .article-1 {
+    width: 100%;
+   }
+
+#contact-info h2{
+    border-bottom: 0px;
+    border-right: 2px solid blue;
+   }
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   }
+
+
+#my-work {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+   }
+
+   /* article {
+margin-left: 8%;
+   } */
+
+.nav-links {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-flow: column wrap;
 }
