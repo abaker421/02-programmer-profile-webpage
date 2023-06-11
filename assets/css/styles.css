@@ -1,6 +1,6 @@
 
 * {
- font-family
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
@@ -11,6 +11,7 @@ main {
 body {
     margin: 0;
     padding: 0;
+    background-color: grey;
 }
 
 /* Targets the header, creates flex box, puts items in a row */
@@ -88,9 +89,11 @@ nav a {
 
 div p {
  margin: 25px;
- color:blue;
- background-color: white;
-
+ color:white;
+ /* background-color: royalblue; */
+ font-size: 24px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-weight: 800;
 }
    
 #contact-info {
@@ -101,7 +104,8 @@ div p {
    }
    
 #contact-info p {
-       margin: 120px;
+       margin-left: 60px;
+       margin-right: 250px;
        text-align: center;
        justify-content: center;
    }
@@ -109,8 +113,12 @@ div p {
 #my-work article {
     display: flex;
     flex-flow: row wrap;
-    width: 50%;
+    /* width: 50%; */
    }
+
+#my-work {
+  width: 50%;
+}
 
 #my-work .article-1 {
     width: 100%;
@@ -144,4 +152,5 @@ div p {
     /* justify-content: space-between; */
     flex-flow: column wrap;
 }
+
 
