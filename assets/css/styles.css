@@ -41,6 +41,9 @@ h2{
     margin-right: auto;
     margin-left: 20px;
     flex-shrink: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: white;
 }
 
 section {
@@ -84,16 +87,14 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: inherit;
+    color: orange;
 }
 
 div p {
  margin: 25px;
- color:white;
- /* background-color: royalblue; */
- font-size: 24px;
- font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- font-weight: 800;
+ color:orange;
+ font-size: 36px;
+ font-family:'Brush Script MT, Brush Script Std, cursive, sans-serif';
 }
    
 #contact-info {
@@ -104,10 +105,14 @@ div p {
    }
    
 #contact-info p {
-       margin-left: 60px;
-       margin-right: 250px;
+       margin-right: 300px;
        text-align: center;
        justify-content: center;
+} 
+
+#contact-info p a {
+       text-decoration: none;
+       color: orange;
    }
    
 #my-work article {
@@ -136,8 +141,10 @@ div p {
     height: 10vh;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
+    font-weight: 900;
+    text-shadow: 0px 0px 5px blue, 0px 0px 25px black, 0px 0px 35px orange;
    }
 
 #my-work {
