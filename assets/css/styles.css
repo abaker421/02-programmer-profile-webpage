@@ -193,10 +193,6 @@ article a{
    }
 
 @media screen and (max-width: 820px) {
-        h1 {
-            font-size: 70%;
-        }
-
        #my-work article {
            width: 100%;
            display: flex;
@@ -310,6 +306,4 @@ article a{
         display: block;
         margin-bottom: 10px;
     }
-
-  
     }
