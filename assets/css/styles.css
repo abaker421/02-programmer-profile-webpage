@@ -1,6 +1,7 @@
 
 * {
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: lightblue;
 }
 
 main {
@@ -14,7 +15,6 @@ body {
     background-color: grey;
 }
 
-/* Targets the header, creates flex box, puts items in a row */
 header {
     display: flex;
     flex-direction: row;
@@ -46,6 +46,10 @@ h2{
     color: white;
 }
 
+nav {
+    margin-left: auto;
+}
+
 section {
     display: flex;
     flex-flow: row wrap;
@@ -62,12 +66,6 @@ article {
     flex-wrap: wrap;
 }
 
-/* Changes the margin of the nav so that the ul elements can go to the right of the page */
-nav {
-    margin-left: auto;
-}
-
-/* Targets the unordered list in the nav, creates and sets flex box properties, removes bullet points, puts content to right side of screen */
 nav ul{
     list-style: none;
     display: flex;
@@ -77,7 +75,6 @@ nav ul{
     margin: 0px;
     padding: 0px;
     height: 100%;
-    text-align: center;
 }
 
 nav ul li {
@@ -120,9 +117,11 @@ align-items: center;
        color: orange;
    }
    
-
 #my-work article {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #my-work #article-1 {
@@ -136,10 +135,24 @@ align-items: center;
    
 #my-work {
        display: flex;
-       justify-content: flex-end;
-       align-items: flex-start;
+       justify-content: center;
+       align-items: center;
        flex-wrap: wrap;
       }
+
+#my-work img {
+ width: 50%;
+ padding: 15px;
+}
+
+#article-1 img {
+ width: 100%;
+}
+
+#project-links {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .banner {
     background-image: url("../images/banner.jpg");
@@ -154,10 +167,85 @@ align-items: center;
     text-shadow: 0px 0px 5px blue, 0px 0px 25px black, 0px 0px 35px orange;
    }
 
-#project-links {
-    display: flex;
-    flex-flow: row wrap;
-}
+@media screen and (max-width: 768px) {
+       #my-work article {
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+         }
+   
+       #article-1 img {
+           width: 50%;
+          }
 
+        #contact-info p {
+            margin-right: 50px;
+        }
+   
+        h2 {
+           text-align: center;
+           padding: 0px;
+           margin-left: 0px;
+          }
 
+        section {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
 
+          .nav-links h2 {
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+        }
+   }
+   
+@media screen and (max-width:480px) {
+
+    header {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+   
+    div p {
+       font-size: 20px;
+    }
+   
+
+    h1 {
+    text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+          }
+
+     #contact-info {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: 0px;
+     }
+   
+     #contact-info h2{
+       border-bottom: 2px solid blue;
+       border-right: 0px;
+     }
+
+     #contact-info p {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #contact-info p a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+  
+    }
