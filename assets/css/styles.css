@@ -98,15 +98,14 @@ div p {
  font-family:'Brush Script MT, Brush Script Std, cursive, sans-serif';
 }
 
-#contact-info div p{
- margin: 50px;
+article a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-article a{
-display: flex;
-justify-content: center;
-align-items: center;
+#contact-info div p{
+ margin: 50px;
 }
 
 #about-me {
@@ -195,7 +194,7 @@ align-items: center;
 
 @media screen and (max-width: 820px) {
         h1 {
-            text-size: 70%;
+            font-size: 70%;
         }
 
        #my-work article {
@@ -246,7 +245,7 @@ align-items: center;
               }
 
       
-          .nav-links h2 {
+        .nav-links h2 {
             text-align: center;
             margin: auto;
             margin-top: 20px;
