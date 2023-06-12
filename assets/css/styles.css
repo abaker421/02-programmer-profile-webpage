@@ -195,6 +195,7 @@ article a{
     align-items: center;
     font-weight: 900;
     text-shadow: 0px 0px 5px blue, 0px 0px 25px black, 0px 0px 35px orange;
+    
    }
 
 @media screen and (max-width: 820px) {
