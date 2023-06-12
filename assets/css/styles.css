@@ -78,15 +78,17 @@ nav ul{
 }
 
 nav ul li {
-    margin: 50px;
+    margin: 20px;
     padding: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: orange;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2px 10px;
+    white-space: nowrap;
 }
 
 div p {
@@ -117,19 +119,21 @@ align-items: center;
        flex-direction:row;
        align-items: center;
        background-color: #404040;
+       flex-wrap: nowrap;
    }
 
 #contact-info div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
 
 #contact-info p {
        text-align: center;
        justify-content: center;
        align-items: center;
+       flex-flow: row wrap;
 } 
 
 #contact-info p a {
@@ -190,6 +194,10 @@ align-items: center;
    }
 
 @media screen and (max-width: 820px) {
+        h1 {
+            text-size: 70%;
+        }
+
        #my-work article {
            width: 100%;
            display: flex;
@@ -236,6 +244,7 @@ align-items: center;
             justify-content: center;
             align-items: center;
               }
+
       
           .nav-links h2 {
             text-align: center;
@@ -278,6 +287,11 @@ align-items: center;
         align-items: center;
           }
 
+    nav ul li a {
+        padding: 15px 50px;
+        font-size: 125%;
+    }
+
      #contact-info {
        flex-direction: column;
        justify-content: center;
@@ -292,7 +306,10 @@ align-items: center;
         margin: 0px;
         margin: 30px 0px;
     }
-
+    #contact-info div p {
+        border: 2px solid white;
+        
+    }
     #contact-info p a {
         display: block;
         margin-bottom: 10px;
