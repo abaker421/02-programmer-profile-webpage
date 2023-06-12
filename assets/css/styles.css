@@ -306,10 +306,10 @@ align-items: center;
         margin: 0px;
         margin: 30px 0px;
     }
-    #contact-info div p {
+    /* #contact-info div p {
         border: 2px solid white;
-        
-    }
+        border-radius: 15px;
+    } */
     #contact-info p a {
         display: block;
         margin-bottom: 10px;
