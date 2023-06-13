@@ -246,7 +246,10 @@ article a{
         justify-content: center;
         align-items: center;
     }
-
+    
+    nav a {
+        padding: 10px 20px;
+    }
       
     .nav-links h2 {
         text-align: center;
