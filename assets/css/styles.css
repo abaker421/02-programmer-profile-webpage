@@ -152,6 +152,10 @@ article a{
     width: 100%;
 }
 
+#article-1 a {
+    width: 800px;
+}
+
 #my-work img {
     border: 2px solid black;
     border-radius: 10px;
